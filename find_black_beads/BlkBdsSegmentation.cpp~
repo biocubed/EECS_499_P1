@@ -17,7 +17,7 @@ int main(int argc, char** argv )
         Mat frame;
         cap >> frame; // get a new frame from camera
         cvtColor(frame, frame, CV_BGR2GRAY); // convert color image to gray image
-        threshold(frame, frame, 150, 255, THRESH_BINARY); //  segmentation
+        threshold(frame, frame, 150, 255, THRESH_BINARY); // segmentation
         imshow("Black Beads", frame);
         if(waitKey(30) >= 0) break;
     }
